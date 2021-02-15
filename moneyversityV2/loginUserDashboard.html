@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MoneyVersity Welcome</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="MoneyVersity Financial Website" name="keywords">
+  <meta content="MoneyVersity Company" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!--put in my w3css ,"cursive","sans-serif"-->
+    <link rel="stylesheet" href="css/w3.css"/>
+    <style>
+      .w3-myfont {
+        font-family: "Comic Sans MS" ;
+      }
+
+      .w3-custom-purple {
+        background: #6a41ed;
+      }
+    </style>
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body class="w3-myfont">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="w3-black">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto w3-myfont">MoneyVersity</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html#">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li><!--link to AboutUs Page when You Get Here-->
+          <li><a href="index.html#services">Services</a></li> <!--link to Services Page when You Get Here-->
+          <li><a href="index.html#plans">Plans</a></li><!--Link to Our Offerings Page when You are done-->
+          <li><a href="index.html#faqs">FAQs</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li><!--Link to Our Portfolio Page when You Get Here -->
+          <li><a href="index.html#contact">Contact</a></li>
+           <!--link to Team Page when you get Here-->
+          <li class="menu-has-children"><a href="#">More</a>
+            <ul>
+              <li><a href="signUp.html">SignUp</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="termsConditions.html">Terms & Conditions</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <!--<li><a href="#">Drop Down 5</a></li>-->
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header --><br/>
+
+  <main id="main">
+    <br/>
+  		<section class="loginPage" id="contact">
+  			<div class=" wow pulse w3-center w3-container w3-padding">
+  				<div class="col-lg-4"></div>
+  				<div class="col-lg-4 w3-center w3-padding w3-card-4 w3-round-xxlarge">
+  					<br/>
+  					<div class="w3-border-bottom w3-border-green w3-padding w3-large"><b>Login to your dashboard here <br/>
+  						<span class="icon-hand"></span> <span class="w3-medium">See you on the other side:</span></b>
+  					</div>
+  					<br/>
+
+  					<div class="w3-center w3-xxlarge">
+  						<b><span class="w3-circle w3-green icon-profile-female"></span></b>
+  					</div>
+
+  						<div class="form">
+
+  						  <b><div id="errormessage" class="w3-red"></div></b>
+  						  <form action="" method="post" role="form" class="contactForm">
+
+  						    	<div class="form-group">
+  						    	  <input type="text" class="form-control" name="email" id="email_username" placeholder="Email/Username" required="true" data-msg="Please enter a valid email or username " />
+  						    	  <div class="validation"></div>
+  						    	</div>
+  						    	<p class="w3-tiny w3-left">
+  						    		Note: We'll never share your email with anyone else.
+  						    	</p><br/>
+
+  						    	<div class="w3-container w3-center">
+  						    		<a href="#" id="show_tag">
+  						    			<span class="icon-eye w3-xlarge" id="pass_show"></span>
+  						    		</a>
+  						    		<a href="#" id="hide_tag">
+  						    			<span class="icon-eye-blocked w3-xlarge" id="pass_hide"></span>
+  						    		</a>
+  						    	</div>
+
+  						    		<div class="form-group">
+  						    	  		<input type="password" class="form-control" id="password" placeholder="Password" required="" required="true" data-rule="minlen:4" data-msg="Please enter at least 4 chars for password" />
+  						    	  		<!--<span class="icon-eye w3-green" id="hide_show"></span>-->
+  						    	  		<div class="validation"></div>
+  						    		</div><br/>
+
+  						    		<div class="wow bounceInUp text-center" id="signUp">
+  						      			<button type="submit" id="login"><b>LogIn</b></button>
+  						    		</div>
+
+  						    <!--<div class="text-center" id="loading">	
+  						    	<i class="spinner-border w3-text-deep-purple"></i>
+  						    </div>-->
+  						  </form><br/>
+
+  						  <div class="w3-padding w3-medium">Forgot Password? 
+  						  	<a href="changePassword.html"><u><i>Change it</i></u></a>
+  						  </div>
+  						</div>
+  					</div>
+  					<div class="col-md-4"></div>
+  				</div>
+  				<div class="w3-center w3-padding w3-medium">
+  					<b>
+  						Don't have an account? 
+  						<a href="signup.html"><u><i>SignUp now</i></u></a>
+  					</b>
+  				</div>
+  	</section>
+
+
+
+    <br/><br/><br/><br/><br/>
+    
+    <section class="wow w3-section" id="userDashboardSkeleton">
+
+      <div class="w3-container w3-center w3-margin">
+
+        <div class="wow fadeInUp w3-container w3-center w3-padding w3-card-4 w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-round-xlarge w3-border-green w3-small"><b>
+          N.B. - Any amount deposited into the provided deposit account number or bitcoin wallet will be assumed to be for the sole purpose of investment according to the price range in our <a href="index.html#plans"><span class="w3-text-green"><u><i>plans</i></u></span></a>.<br/><br/>Ensure your deposited fund falls within one of the ranges in our plans before making your deposit, otherwise, such funds will not be used for intended purposes.<br/>You will be expected to add more to the amount to make it fall into one of our plans to start the investment, otherwise, your transaction will be left pending.</b>
+        </div><br/>
+
+        <div class="wow fadeInUp col-md-4 w3-card-4 w3-center w3-padding">
+          <div class="w3-center w3-border-bottom w3-xxlarge w3-padding"> 
+            <div class="w3-center"><span class="w3-circle w3-green icon-profile-female"></span></div>
+            <b>Welcome <br/><span id="welcomeUName"></span></b>
+          </div>
+          <br/>
+
+          <p>
+            <span class="icon-briefcase"></span>
+            <b class="w3-large">Current Plan</b><br/> 
+            <span id="user_plan"></span>
+          </p><br/>
+          <br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+          <p>
+            <span class="icon-emoji-neutral"></span>
+            <b class="w3-large">Investment Status</b> 
+            <span id="invest_status"></span>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+
+          <p>
+            <span class="icon-price-tag"></span>
+            <b class="w3-large">Initial Capital</b> 
+            <span id="invest_capital"></span>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+
+          <p>
+            <span class="icon-price-ribbon"></span>
+            <b class="w3-large">R.O.I.(%)</b> 
+            <span id="invest_returns"></span>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+          <p>
+            <span class="icon-calendar"></span>
+            <b class="w3-large">Days Remaining</b> 
+            <span id="invest_days_remaining"></span>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+
+          <br/><br/>
+
+
+          <div class="wow tada w3-center w3-padding w3-card-4 w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-round-xlarge w3-border-green w3-deep-purple"><br/>
+
+            <b><span class="icon-user"></span> FullName <br/>
+              <span id="fullName"></span> </b>
+            <br/><br/>
+
+            <b><span class="icon-user"></span> UserName <br/>
+              <span id="userName"></span> </b>
+            <br/><br/>
+
+            <b><span class="icon-envelop"></span> Email <br/>
+              <span id="email"></span> </b>
+            <br/><br/>
+
+            <b><span class="icon-phone2"></span> Phone Number<br/> 
+              <span id="phoneNum"></span> </b>
+            <br/><br/>
+
+            <!--<b><span class="icon-calendar"></span> Day : <span class="phoneNum"></span> </b>
+            <br/><br/>
+
+            <b><span class="icon-calendar"></span> Month : <span class="phoneNum"></span> </b>
+            <br/><br/>
+
+            <b><span class="icon-calendar"></span> Year : <span class="phoneNum"></span> </b>
+            <br/><br/>-->
+
+          </div>
+          <br/><br/><br/><br/>
+          <div class="w3-padding wow bounceInDown">
+            <b><span class="icon-notification"></span>Deposited your fund into one of our accounts?</b><br/><br/>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmPaymentModal">
+              Confirm Payment
+            </button>
+          </div>
+          <br/>
+          Or click the chat icon on the right side and input your deposit proof details there.
+          <br/><br/><br/>
+          <div class="w3-padding">
+            <span class="icon-hand"></span>Hey! Be sure to check out our <br/><br/>
+            <b class="w3-padding"> - <a href="termsConditions.html"><i>Terms and Conditions</i></a></b><br/><br/> 
+            <b class="w3-padding"> -  <a href="disclaimer.html"><i>Disclaimer</i></a></b>
+          </div>
+          <br/>
+        </div>
+
+        <!-- This modal will pop up when confirm Payment is clicked-->
+        <!-- Modal -->
+        <div class="modal" id="confirmPaymentModal"><!--tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+          <div class="modal-dialog"> <!--role="document"-->
+
+            <div class="modal-content">
+
+              <div class="modal-header w3-deep-purple">
+                <b class="modal-title w3-large">Confirm Payment</b>
+                <!--<button type="button" class="close w3-text-green" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>-->
+              </div><br/>
+              <b><div class="w3-text-red" id="confPayError"></div></b>
+              <b><div class="w3-text-green" id="confPaySuccess"></div></b>
+              <br/>
+
+              <div class="modal-body">
+                <form>
+
+                  <p>
+                    <input type="text" class="form-control my-2" id="payment_account" placeholder="Account"
+                    required="true">
+                    <span class="w3-small"> Account/Wallet Name into which the payment was made</span>
+                  </p>
+                  <input type="text" class="form-control my-2" id="payment_amount" placeholder="Amount Paid" required="true"><br/>
+    
+                  <input type="text" class="form-control my-2" id="payment_day" placeholder="Payment Day" required="true"><br/>
+                  <div>
+                    <div class="col-md-6">
+                      <input type="number" class="form-control my-2" id="payment_hour" placeholder="Hour">
+                    </div>
+
+                    <div class="col-md-6">
+                      <input type="number" class="form-control my-2" id="payment_minute" placeholder="Minute">
+                    </div>
+                  </div>
+                  <br/><br/><br/>
+
+                  <div class="w3-text-green" id="upload_image_name"><!--name of image --></div>
+                  <div>
+                    <span class="w3-medium">
+                      Having issues with the approval?<br/>Click the <span class="icon-chat"></span>chat icon on the right side of this page and upload the image of tranaction as a proof of your payment. <br/>We will reach you as soon as possible.
+                    <!--<button type="button" class="btn btn-primary">Upload</button>-->
+                  </div>
+                  
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="submitUserProof">Submit</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <br/>
+        
+        <div class="wow fadeInUp col-md-4 w3-border-right">
+          <div class="container w3-card w3-center w3-padding">  
+            <header class="w3-border-bottom w3-padding">
+              <b class="w3-xxlarge">Personal Info</b><br/>
+              <b>Details here will be used for all user transactions.</b><br/><br/>
+              <p class="w3-small w3-padding w3-border-right w3-border-left w3-border-top w3-border-bottom w3-round-xxlarge">
+                <span class="wow fadeInX">Ensure you update/change to the wallet/account that you intend to use for any impending transactions.</span> <br/><span class="wow fadeInY">The updated details will be used for all transactions per time.</span>
+              </p>
+            </header>
+            <br/>
+
+            <p>
+              <span class="icon-wallet"></span>
+              <b>Your Bitcoin Wallet Address</b>
+              <br/>
+              <span id="user_bit"></span>
+            </p><br/>
+
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+            <p>
+              <span class="icon-wallet"></span>
+              <b>Your Ethereum Wallet Address :</b> 
+              <span id="user_ether"></span>
+            </p><br/>
+
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+          <p>
+            <span class="icon-wallet"></span>
+            <b> Your BitcoinCash Account </b>
+            <br/>
+            <span id="user_bitcash"></span>
+          </p><br/>
+
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+            <p>
+              <span class="icon-wallet"></span>
+              <b> Your Perfect Money Account </b>
+              <br/>
+              <span id="user_pMoney"></span>
+            </p><br/>
+
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+            <br/>
+
+            <footer> 
+                <button type="button" class="wow bounceInDown btn btn-primary" data-toggle="modal" data-target="#updateUserAccountModal">
+                  Update
+                </button>
+                </a>
+            </footer><br/>
+          </div>
+        </div>
+
+
+        <!-- This modal will pop up when Update Account is clicked-->
+        <!-- Modal -->
+        <div class="modal" id="updateUserAccountModal"><!--tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+          <div class="modal-dialog"> <!--role="document"-->
+
+            <div class="modal-content">
+
+              <div class="modal-header w3-deep-purple">
+                <b class="modal-title w3-large" id="exampleModalLabel">Update/Change Your Transactional Wallets/Accounts </b>
+                <!--<button type="button" class="close w3-text-green" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>-->
+              </div><br/>
+              <b><div class="w3-text-red" id="updateError"></div></b>
+              <b><div class="w3-text-green" id="updateSuccess"></div></b>
+              <br/>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <input type="text" class="form-control my-2" id="updateUserBit" placeholder="Transactional BitCoin Wallet" required="true"/>
+                  </div><br/>
+          
+                  <div>
+                    <input type="text" class="form-control my-2" id="updateUserEther" placeholder="Transactional Ethereum Wallet" required="true"/>
+                  </div><br/>
+
+                  <div>
+                    <input type="text" class="form-control my-2" id="updateBitcoinCash" placeholder="Transactional BitCoinCash Wallet" required="true">
+                  </div><br/>      
+
+                  <div>
+                    <input type="text" class="form-control my-2" id="updatePerfectMoney" placeholder="Transactional PerfectMoney Account" required="true">
+                  </div>    
+                  
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="updateUserAcc">Update</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="wow fadeInUp col-md-4 w3-border-right">
+            <div class="container w3-card w3-center w3-padding">  
+                <header class="w3-border-bottom w3-padding">
+                  <b class="w3-xxlarge">Deposit Info</b><br/>
+                  <b>Deposit all investment funds here according to price range in plans</b>
+                </header>
+                <br/>
+
+                <p>
+                  <span class="icon-wallet"></span>
+                  <b>MoneyVersity BitCoin Wallet Address</b>
+                  <br/>
+                  <span id="admin_bit"></span>
+                </p><br/>
+
+                <div class="w3-border-bottom"></div>
+                <br/>
+
+                <p>
+                  <span class="icon-wallet"></span>
+                  <b>MoneyVersity Ethereum Wallet Address</b>
+                  <br/>
+                  <span id="admin_ether"></span>
+                </p><br/>
+
+                <div class="w3-border-bottom"></div>
+                <br/>
+
+                <p>
+                  <span class="icon-wallet"></span>
+                  <b>MoneyVersity BitCoinCash Wallet Address</b>
+                  <br/>
+                  <span id="admin_bitcash"></span>
+                </p><br/>
+
+                <div class="w3-border-bottom"></div>
+                <br/>
+
+                <p>
+                  <span class="icon-wallet"></span>
+                  <b> MoneyVersity PerfectMoney Account </b>
+                  <br/>
+                  <span id="admin_pMoney"></span>
+                </p><br/>
+
+                <div class="w3-border-bottom"></div>
+                <br/>
+
+                <div class="w3-border-bottom"></div>
+                <br/>
+
+                <br/><br/><br/>
+
+            </div>
+        </div>
+
+        <div>
+          <div class="col-md-6"></div>
+
+          <div class="col-md-7 w3-border-right w3-border-bottom w3-padding">
+            <br/><br/><br/>
+
+           <div class="wow bounceInUp container w3-card w3-center w3-padding margin">  
+                <header class="w3-border-bottom w3-center"><br/><br/>
+                  <b class="w3-xlarge">Transaction History</b><br/>
+                </header>
+                <br/><br/><br/>
+                <!--<a href="" id="dummyA"><span class="w3-card-4 w3-padding w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-border-green w3-round-xxlarge w3-deep-purple">Deposit</span>-->
+                <button type="button" class="wow fadeIn btn btn-primary" id="depHistBtn" data-toggle="modal" 
+                data-target="#depositTransHistoryModal">
+                    Deposit
+                </button>
+                <!--<p class="wow tada w3-center w3-card-4 w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-round-xlarge w3-border-green" id="dep_hist">-->
+                  <br/><br/>
+                </p><br/>
+
+
+                <!-- This modal will pop up when deposit transaction is clicked-->
+                <!-- Modal -->
+                <div class="modal" id="depositTransHistoryModal"><!--tabindex="-1" role="dialog" aria-labelledby="action" aria-hidden="true">-->
+                  <div class="modal-dialog" role="document"> <!--role="document"-->
+
+                    <div class="modal-content">
+
+                      <div class="modal-header w3-deep-purple">
+                        <b class="modal-title w3-large" id="exampleModalLabel">
+                          Deposit History
+                        </b>
+                        <!--<button type="button" class="close w3-text-green" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>-->
+                      </div><br/><br/>
+
+                      <div class="modal-body w3-center" id="depositHistory"> 
+                        <br/>
+                        <b><div id="errormessage"></div></b>
+                        <br/>
+                        <div class="spinner-border text-success" id= "loadingDepHistory" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div> 
+
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--<button type="button" class="btn btn-primary">Update</button>-->
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <p class="w3-border-bottom"></p>
+                <br/><br/>
+                <!--<a href="" id="dummyA"><span class="w3-card-4 w3-padding w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-border-green w3-round-xxlarge w3-deep-purple">Withdrawal</span>
+                </a>-->
+                <button type="button" class="wow fadeIn btn btn-primary" id="withHistBtn" data-toggle="modal" 
+                data-target="#withdrawalTransHistoryModal">
+                  Withdrawal
+                </button>
+
+                <!--<p class="wow tada w3-center w3-card-4 w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-round-xlarge w3-border-green " id="with_hist">-->
+                  <br/><br/>
+            </div><br/>
+          </div>
+
+
+
+          <!-- This modal will pop up when withdrawal transaction is clicked-->
+          <!-- Modal -->
+          <div class="modal" id="withdrawalTransHistoryModal"><!--tabindex="-1" role="dialog" aria-labelledby="action" aria-hidden="true">-->
+            <div class="modal-dialog" role="document"> <!--role="document"-->
+
+              <div class="modal-content">
+
+                <div class="modal-header w3-deep-purple">
+                  <b class="modal-title w3-large" id="exampleModalLabel">
+                    Withdrawal History
+                  </b>
+                  <!--<button type="button" class="close w3-text-green" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>-->
+                </div><br/><br/>
+
+                <div class="modal-body" id="withdrawalHistory">
+                  <br/>
+                  <b><div id="errormessg"></div></b>
+                  <br/>
+                  <div class="spinner-border text-success" id= "loadingWithHistory" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div> 
+
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!--<button type="button" class="btn btn-primary">Update</button>-->
+                </div>
+
+              </div>
+            </div>
+          </div>             
+
+
+
+          <div class="col-md-1 w3-border-bottom">
+            <br/><br/><br/><br/><br/><br/><br/>
+            <p>
+              <a href="" id="logout"><span class="w3-card-4 w3-padding w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-border-green w3-round-xxlarge w3-deep-purple">Logout</span>
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+          <!--<div class="w3-center w3-border-bottom w3-xxlarge"> 
+            <b>Terms and Conditions</b>
+          </div><br/>
+          <div class="wow jello w3-center w3-padding w3-card-4 w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-round-xlarge w3-border-green">
+            These terms and conditions ("Terms", "Agreement") are an agreement between Website Operator ("Website Operator", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the moneyversity.com website and any of its products or services (collectively, "Website", "Mobile Application" or "Services").
+          </div>
+          <br/>-->
+      </div>
+    </section>
+
+  </main>
+
+  <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3><span class="w3-myfont">MoneyVersity</span></h3>
+              <p>
+                <span class="w3-myfont w3-medium">
+                  The future belongs to the financially equipped generation, that's why we are here!<br/>With the need for highly efficient investment platform on the rise, and the need for profit-oriented capital diversification, we envision a Nigeria with low poverty index and investment inclusion for everyone - not just the socialites and elites. <br/>Hence, we intend to position ourselves as a key player in the financial space giving everyone a financial hope in the present and into a robust financial future.
+                </span>
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4><span class="w3-myfont">Useful Links</span></h4>
+              <ul>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#">Home</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#about">About us</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#faqs">FAQS</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#plans">Plans</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="blog.html">Blog</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="termsConditions.html">Terms & Conditions</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="disclaimer.html">Disclaimer</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <ul class="probootstrap-contact-info">
+                <li><i class="icon-location2"></i> <span>Ibadan, Nigeria</span></li>
+                <li><i class="icon-mail"></i><span>moneyvasity@gmail.com</span></li>
+                <li><i class="icon-phone"></i><span>+234 7036766830</span></li>
+                <li><i class="icon-phone2"></i><span>+234 9033068412</span></li>
+              </ul>
+
+              <div class="social-links">
+                <a href="#" class="twitter w3-green"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook w3-green"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram w3-green"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus w3-green"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin w3-green"><i class="fa fa-linkedin"></i></a>
+              </div>
+
+            </div>
+
+            <!--<div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit"  value="Subscribe">
+              </form>
+            </div>-->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          @2020. All Rights Reserved. <br/>Designed & Developed by <br/><b>TechRite Ltd.</b><br/>
+        </div>
+      </div>
+
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5f1172407258dc118bee6c34/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+    </footer><!-- #footer -->
+
+    <a href="#" class="w3-display-bottomleft back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <!--Page Manager-->
+    <script src="js/custom/pageManager.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <!--<script src="contactform/contactform.js"></script>-->
+
+    <script type="text/javascript" src="js/custom/loginDashboard.js"></script>
+    
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>
