@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MoneyVersity Welcome</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="MoneyVersity Financial Website" name="keywords">
+  <meta content="MoneyVersity Company" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!--put in my w3css ,"cursive","sans-serif"-->
+    <link rel="stylesheet" href="css/w3.css"/>
+    <style>
+      .w3-myfont {
+        font-family: "Comic Sans MS" ;
+      }
+
+      .w3-custom-purple {
+        background: #6a41ed;
+      }
+    </style>
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body class="w3-myfont">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="w3-black">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto w3-myfont">MoneyVersity</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html#">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li><!--link to AboutUs Page when You Get Here-->
+          <li><a href="index.html#services">Services</a></li> <!--link to Services Page when You Get Here-->
+          <li><a href="index.html#plans">Plans</a></li><!--Link to Our Offerings Page when You are done-->
+          <li><a href="index.html#faqs">FAQs</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li><!--Link to Our Portfolio Page when You Get Here -->
+          <li><a href="index.html#contact">Contact</a></li>
+           <!--link to Team Page when you get Here-->
+          <li class="menu-has-children"><a href="#">More</a>
+            <ul>
+              <li><a href="signUp.html">SignUp</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="termsConditions.html">Terms & Conditions</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <!--<li><a href="#">Drop Down 5</a></li>-->
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header --><br/><br/>
+
+  <main id="main">
+  		<section id="contact"><br/><br/><br/>
+  			<div class=" wow pulse w3-center w3-container w3-padding">
+  				<div class="col-lg-4"></div>
+  				<div class="col-lg-4 w3-center w3-padding w3-card-4 w3-round-xxlarge">
+  					<br/>
+  					<div class="w3-border-bottom w3-border-green w3-padding w3-large"><b>Hello Admin!<br/>
+  						<span class="ion-android-cloud"></span> <span class="w3-medium">Login With Your Password</span></b>
+  					</div>
+  					<br/>
+
+  					<div class="w3-center w3-xxlarge">
+  						<!--<b><span class="w3-circle w3-green icon-profile-female"></span></b>-->
+  					</div>
+
+  						<div class="form">
+
+  						  <!--<div id="sendmessage">Your message has been sent. Thank you! We will get back to you soon.</div>-->
+  						  <b><div class="w3-red" id="errormessage"></div></b>
+  						  <form action="" method="post" role="form" class="contactForm">
+
+  						    	<!--<div class="form-group">
+  						    	  <input type="email" class="form-control" name="email" id="email_username" placeholder="Email/Username" required="true" data-msg="Please enter a valid email or username " />
+  						    	  <div class="validation"></div>
+  						    	</div>-->
+
+  						    	<div class="w3-container w3-center">
+  						    		<a href="#" id="show_tag">
+  						    			<span class="icon-eye w3-xlarge" id="pass_show"></span>
+  						    		</a>
+  						    		<a href="#" id="hide_tag">
+  						    			<span class="icon-eye-blocked w3-xlarge" id="pass_hide"></span>
+  						    		</a>
+  						    	</div>
+
+  						    		<div class="form-group">
+  						    	  		<input type="password" class="form-control" id="password" placeholder="Password" required="true" data-rule="minlen:4" data-msg="Please enter at least 4 chars for password" />
+  						    	  		<!--<span class="icon-eye w3-green" id="hide_show"></span>-->
+  						    	  		<div class="validation"></div>
+  						    		</div>
+
+  						    		<div class="wow bounceInUp text-center"> <!--id="logIn"-->
+  						      			<button type="submit" id="adminLogIn"><b>LogIn</b></button>
+  						    		</div>
+
+  						    <!--<div class="text-center" id="loading">	
+  						    	<i class="spinner-border w3-text-deep-purple"></i>
+  						    </div>-->
+  						  </form><br/>
+
+  						  <!--<div class="w3-padding w3-medium">Forgot Password? 
+  						  	<a href="changePassword.html"><u><i>Change it</i></u></a>
+  						  </div>-->
+  						</div>
+  					</div>
+  					<div class="col-md-4"></div>
+  				</div><br/>
+  	</section>
+  </main>
+
+  <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3><span class="w3-myfont">MoneyVersity</span></h3>
+              <p>
+                <span class="w3-myfont w3-medium">
+                  The future belongs to the financially equipped generation, that's why we are here!<br/>With the need for highly efficient investment platform on the rise, and the need for profit-oriented capital diversification, we envision a Nigeria with low poverty index and investment inclusion for everyone - not just the socialites and elites. <br/>Hence, we intend to position ourselves as a key player in the financial space giving everyone a financial hope in the present and into a robust financial future.
+                </span>
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4><span class="w3-myfont">Useful Links</span></h4>
+              <ul>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#">Home</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#about">About us</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#faqs">FAQS</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html#plans">Plans</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="blog.html">Blog</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="termsConditions.html">Terms & Conditions</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="disclaimer.html">Disclaimer</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <ul class="probootstrap-contact-info">
+                <li><i class="icon-location2"></i> <span>Ibadan, Nigeria</span></li>
+                <li><i class="icon-mail"></i><span>moneyvasity@gmail.com</span></li>
+                <li><i class="icon-phone"></i><span>+234 7036766830</span></li>
+                <li><i class="icon-phone2"></i><span>+234 9033068412</span></li>
+              </ul>
+
+              <div class="social-links">
+                <a href="#" class="twitter w3-green"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook w3-green"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram w3-green"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus w3-green"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin w3-green"><i class="fa fa-linkedin"></i></a>
+              </div>
+
+            </div>
+
+            <!--<div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit"  value="Subscribe">
+              </form>
+            </div>-->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          @2020. All Rights Reserved. <br/>Designed & Developed by <br/><b>TechRite Ltd.</b><br/>
+        </div>
+      </div>
+
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5f1172407258dc118bee6c34/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+    </footer><!-- #footer -->
+
+    <a href="#" class="w3-display-bottomleft back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <!--Page Manager-->
+    <script src="js/custom/pageManager.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <script src="js/custom/adLgXYZ123.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>
